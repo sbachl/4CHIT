@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1= "Stundenplan"
+  -var i=0
+  ul
+  each val in Stundenplan
+    li= val.Fach
+    li= val.UBeginn
+    li= val.UEnde
+    a(class="btn waves-effect waves-red red" href="/?delete="+i++) Löschen 
+
+  <body>
+     <form action="/" method="POST">
+       <p>
+         Fach: <input type="text" name="fach" value=""/>
+         UBeginn: <input type="text" name="ubeginn" value=""/>
+         UEnde: <input type="text" name="uende" value=""/>
+       </p>
+       <input class="btn waves-effect waves-teal" type="submit" value="Stunde Hinzufügen"/>
+     </form>
+  </body>
+
+
+
+    
+  

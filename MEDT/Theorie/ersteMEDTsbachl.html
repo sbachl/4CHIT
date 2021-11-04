@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Hallo JavaScript</title>
+    </head>
+    <body>
+        <script>
+            function printSchueler(){
+            var schuelerliste=[
+                {
+                name: 'Simon',
+                alter: 18,
+                kontostand: 102002029949240404,
+                eigenbereechtigt: true,
+                tel:['1234','1234'],
+                },
+                {
+                name: 'Aleks',
+                alter: 18,
+                kontostand: 102002029949240404,
+                eigenbereechtigt: true,
+                tel:['1234'],
+                }
+             ]
+
+        console.log(schuelerliste[0]);
+       //var i;
+        //for(i=0;i<schuelerliste.length;i++){
+            //window.alert(JSON. stringify(schuelerliste[i]));
+       //}
+            schuelerliste.forEach(schueler => {
+            console.log(schuelerliste);
+            alert(JSON.stringify(schueler))
+        });
+    }
+        </script>
+    </body>
+</html>
